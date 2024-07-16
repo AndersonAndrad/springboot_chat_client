@@ -1,0 +1,12 @@
+version: "3"
+services:
+  springboot_chat_client:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3100:3100"
+    container_name: springboot_chat_client
+
+networks:
+  springboot_chat:
